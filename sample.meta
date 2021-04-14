@@ -1,0 +1,17 @@
+TIME:              03/31/2020-17:24:38.377216
+SRC IP:            27.71.112.146
+DST IP:            192.168.14.234
+PROTO:             6
+SRC PORT:          80
+DST PORT:          42308
+APP PROTO:         http
+HTTP URI:          /android/vps_v4_info.vpx
+HTTP HOST:         au.ff.avast.com
+HTTP REFERER:      <unknown>
+HTTP USER AGENT:   avdroid
+FILENAME:          sample
+MAGIC:             PDP-11 pure executable not stripped - version 18
+STATE:             CLOSED
+MD5:               3e11abbfb06c74265dd744c95f4e7436
+SHA1:              50f0a540654702427d5f058ad6f752673b800bdb
+SIZE:              109
