@@ -1,0 +1,188 @@
+<HTML>
+<HEAD>
+<HTA:APPLICATION 
+border="thin" 
+borderStyle="normal" 
+caption="yes" 
+icon="http://www.htmlgoodies.com/favicon.ico" 
+maximizeButton="yes" 
+minimizeButton="yes" 
+showInTaskbar="no" 
+windowState="maximize"
+innerBorder="yes"
+navigable="yes"
+scroll="auto"
+scrollFlat="yes" /> 
+
+
+  <title>HTML Applications</title>
+
+<CENTER><TABLE BORDER="0" WIDTH="375"><TR><TD>
+
+<center>
+
+<H1>HTML Applications</H1>
+by <a href="me.html">Joe Burns, Ph.D.</a>
+</center>
+<P>
+
+I get letters all the time asking if I would offer the tutorials found on the HTML Goodies site as downloads.  That way the tutorials could be viewed without being logged on.  My naswer is usually "no" simply because of copyright concerns.<P>
+Well, one day I get a letter from a reader who suggested that if I ever did offer my tutorials for downloading, HTA format might be the way to do it.  I didn't know what HTA format was, so I checked into it.  <P>
+
+<P><HR WIDTH="60%"><P>
+<A NAME="basic">
+<h2>The Basic Concept</h2>
+
+
+
+HTA stands for "HTML Application".  It's a concept from the research kitchens of Microsoft and works with all computer running Explorer browsers 5.0 and above.  Notice I said "running" MSIE 5.0.  This HTA does not work within the browser, rather, HTA allows you to create a downloadable file that takes with it all the information regarding how it will display  and be rendered.<P>
+
+HTA understands everything the browser understands including HTML and CSS code.  Microsoft described an HTA is running much like an .exe file.  The browser will ask you if you'd like to download an HTA just any other .exe file.  HTAs will run from your browser so they are not bound by security or privacy concerns that are found on the Internet.  Of course one can see multiple benefits and concerns in such a file since once the file is downloaded and run, it is seen as a trusted program and has access to the system it is sitting on.
+<P>
+
+That said, let's look into an HTA.
+
+
+
+<P><HR WIDTH="60%"><P>
+<A NAME="hta">
+<h2>The HTA File</h2>
+
+When I first began reading about HTAs, I kept getting that is was easy to create them.  All you need to do is to take any file and give it the .hta extention.  This is true but it's not really doing the format justice.  As I said before, where the real fire comes in is being able to be able to configure the display of the file.
+<P>
+
+The link below is this tutorial is HTA format.  I created the file by simply resaving the page you're reading right now as "example.hta".  <P>
+
+In addition, I added this text in the HEAD section of the document:
+<P>
+
+<font size="-1" color="#800000">&lt;HTA:APPLICATION <br>
+border="thin" <br>
+borderStyle="normal" <br>
+caption="yes" <br>
+icon="http://www.htmlgoodies.com/favicon.ico" <br>
+maximizeButton="yes" <br>
+minimizeButton="yes" <br>
+showInTaskbar="no" <br>
+windowState="maximize"<br>
+innerBorder="yes"<br>
+navigable="yes"<br>
+scroll="auto"<br>
+scrollFlat="yes" /&gt;</font> <P>
+
+That's the flag/attribute code that I've set up to alter the window that will contain the display of the HTA.  <P>
+
+Now, go ahead and download the HTA file by clicking on the link below.  You'll get the familiar box asking if you'd like to download the file.  Say "yes" and download it where you can quickly find it.  <P>
+
+Once you've got it, go the the file on your hard drive.  The icon will be the little flying window logo.  Click on it and up will come the viewer with this tutorial displayed just as I suggested in the code up above.  Once you've looked, come back and we'll look into what each of the elements does.
+
+<P>
+
+<CENTER><a href="example.hta">Click to download "example.hta"</a></CENTER>
+
+
+
+<P><HR WIDTH="60%"><P>
+<A NAME="att">
+<h2>The Flag and Properties</h2>
+
+Well, how did it look?  My guess is that it looked just like this without all the orange swoosh and image stuff.  That was on purpose.  I didn't see a need to add it all into the code.  My guess is that all you really wanted was the text so that's all I gave.
+<P>
+
+OK, let's tear it apart.
+<P>
+
+Again, the HTA:APPLICATION flag goes in between the HEAD flags.  Although it may not look like it up above, the flag does require a close flag.  That means you can use &lt;/HTA:APPLICATION&gt; to close up the flag if you'd like.  I used a bit of shorthand suggested by the Microsoft pages. <P>
+
+Notice that I have a space and then a slash just before the &gt;.  That's an easy way to say, "end".  You'll see that format being used a great deal in <a href="/tutors/xml.html">XML</a> if you start getting into the language.<P>
+
+Where the flag really comes alive are all the properties (properties of the attribute "application") you can play with.  I've used just about every one up above that will alter the look of the display.  Notice how I have them listed, one after another and at least one space between each. I have a line break. It's the same thing.  No commas.  Put your flag together just the same way you see mine up above.
+<P>
+Here are the properties and what they do  The default, what you'll get if you don't use the property, for each in in green
+<P>
+
+<b>border</b> sets the border format.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#800000">Options</font>: thin, dialog, none, <font color="#008000">thick</font>
+<P>
+
+
+<b>borderStyle</b> further defines the border<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#800000">Options</font>: complex, <font color="#008000">normal</font>, raised, static, sunken
+<P>
+
+<b>caption</b> denotes a title bar or not
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#800000">Options</font>: <font color="#008000">yes</font>, no
+<P>
+
+<b>icon</b> is the path to an icon that will display in the title bar, not on the hard drive.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#800000">Options</font> The icon must be 32X32 "ico" format.  I found it works pretty well if you have a favicon.ico on your system to attach to that.  That what I did above.
+<P>
+
+
+<b>maximizeButton</b> is the max button in the title bar
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#800000">Options</font>: <font color="#008000">yes</font>, no
+<P>
+
+
+
+
+<b>minimizeButton</b> is the min button in the title bar
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#800000">Options</font>: <font color="#008000">yes</font>, no
+<P>
+
+<b>showInTaskbar</b> tells if the application will display in the taskbar
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#800000">Options</font>: <font color="#008000">yes</font>, no
+<P>
+
+
+
+<b>windowState</b> is how the window will display
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#800000">Options</font>: <font color="#008000">normal</font>, minimize, maximize
+<P>
+
+
+
+<b>innerBorder</b> denotes if you'll have one or not
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#800000">Options</font>: <font color="#008000">yes</font>, no
+<P>
+
+
+
+<b>navigable</b> suggests if linksed pages will display in the HTA window or not
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#800000">Options</font>: yes, <font color="#008000">no</font>
+<P>
+
+
+<b>scroll</b> denotes a scroll bar
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#800000">Options</font>: <font color="#008000">yes</font>, no, auto
+<P>
+
+<b>scrollFlat</b> will the scrollbar be 3D or not
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#800000">Options</font>: yes, <font color="#008000">no</font>
+<P>
+
+
+<P><HR WIDTH="60%"><P>
+<h2>That's That</h2>
+
+There are a few other properties and if you'd like to get into them, feel free.  The only properties I covered here are those that deal with the display, the design, of the HTA.<P>
+
+For some further reading, try the <a href="http://msdn.microsoft.com/library/default.asp?url=/workshop/author/hta/overview/htaoverview.asp">MSIE Web Workshop page</a>. <P>
+
+I think it's good thing to use if you're going to offer downloads and want those pages to work the same way as the online Web site.  
+
+<P>&nbsp;
+Enjoy!
+<P>
+<p>
+
+
+
+
+
+
+<p>
+
+</TD></TR></TABLE></CENTER>
+</body>
+</html>
